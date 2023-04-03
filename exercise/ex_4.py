@@ -24,7 +24,7 @@ def romb(bok, wysokosc):
     return 0, 0
 
 # trapez i kolo dla studenta 3
-def trapez(bok_a, bok_b, bok_c, bok_d, wysokosc_a):
+def trapez(b10, 15, 7, 14, 2ok_a, bok_b, bok_c, bok_d, wysokosc_a):
     # TODO
     return 0, 0
 
