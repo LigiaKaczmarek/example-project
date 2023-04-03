@@ -24,13 +24,17 @@ def romb(bok, wysokosc):
     return 0, 0
 
 # trapez i kolo dla studenta 3
-def trapez(b10, 15, 7, 14, 2ok_a, bok_b, bok_c, bok_d, wysokosc_a):
-    # TODO
-    return 0, 0
+def trapez(bok_a, bok_b, bok_c, bok_d, wysokosc_a):
+    obwod = (bok_a + bok_b + bok_c+ bok_d)
+    pole = (bok_a + bok_b)* wysokosc_a/2
+    # TODO 
 
 
 def kolo(promien):
     # TODO
+    pi = pi()
+    obwod = 2*pi()*promien
+    pole = pi()*promien^2
     return 0, 0
 
 
