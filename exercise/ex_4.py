@@ -26,14 +26,16 @@ def romb(bok, wysokosc):
     return obwodR, poleR 
 
 # trapez i kolo dla studenta 3
-def trapez(b10, 15, 7, 14, 2ok_a, bok_b, bok_c, bok_d, wysokosc_a):
-    # TODO
-    return 0, 0
+def trapez(bok_a, bok_b, bok_c, bok_d, wysokosc_a):
+    pole = (bok_a+bok_b)*wysokosc_a/2
+    obwod = bok_b+bok_b+bok_c+bok_d
+    return pole, obwod
 
 
-def kolo(promien):
-    # TODO
-    return 0, 0
+def kolo(promien, pi):
+    pole = pi*promien^2
+    obwod = 2*pi*promien
+    return pole,obwod
 
 
 assert trojkat(10, 15, 16, 8) == (41, 40)
