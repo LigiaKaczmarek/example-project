@@ -46,3 +46,11 @@ for znak in ciag_znakow:
 
 print("Liczba nawiasow otwierajacych wynosi:", liczba_nawiasow_otwierajacych)
 
+# zadanie 1.7
+
+
+studenci = ["Anna Szczesny", "Tomasz Nijaki", "Barbara Kowalska", "Jan Niezbedny"]
+studenci.sort(key=lambda x: x.split()[0]) 
+print("Alfabetyczna lista studentow wynosi: ")
+for student in studenci:
+    print(student)
