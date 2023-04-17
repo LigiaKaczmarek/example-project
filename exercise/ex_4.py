@@ -6,7 +6,7 @@ def trojkat(bok_a, bok_b, bok_c, wysokosc_a):
 
 # kwadrat, prostokat dla studenta 1
 def kwadrat(bok):
-    pole = (bok ^ 2)
+    pole = (bok * bok)
     obwod = (bok * 4)
     return obwod, pole
 
@@ -30,8 +30,8 @@ def romb(bok, wysokosc):
 # trapez i kolo dla studenta 3
 def trapez(bok_a, bok_b, bok_c, bok_d, wysokosc_a):
     pole = (bok_a+bok_b)*wysokosc_a/2
-    obwod = bok_b+bok_b+bok_c+bok_d
-    return pole, obwod
+    obwod = bok_a+bok_b+bok_c+bok_d
+    return obwod, pole
 
 
 def kolo(promien, pi):
@@ -45,7 +45,8 @@ assert kwadrat(20) == (80, 400)
 assert prostokat(12, 10) == (44, 120)
 assert rownoleglobok(6, 5, 2) == (22, 12)
 assert romb(10, 5) == (40, 50)
-assert trapez(10, 15, 7, 14, 2) == (45, 25)
+assert trapez(10, 15, 7, 14, 2) == (46, 25)
 # TODO na koniec! dopisz 2 testy dla kola i dla kazdej innej figury po jednym dodatkowym tescie
-assert rownoleglobok(5, 5, 5) 
+assert rownoleglobok(5, 5, 5) == (20, 25)
+assert romb(12, 8) == (48, 96)
 
