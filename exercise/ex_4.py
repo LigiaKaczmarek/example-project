@@ -18,22 +18,26 @@ def prostokat(bok_a, bok_b):
 
 # rownoleglobok i romb dla studenta 2
 def rownoleglobok(bok_a, bok_b, wysokosc_a):
-    # TODO
-    return 0, 0
+    obwodRW = (bok_a*2)+(bok_b*2)
+    poleRW = bok_a * wysokosc_a 
+    return obwodRW, poleRW
 
 def romb(bok, wysokosc):
-    # TODO
-    return 0, 0
+    obwodR = bok * 4
+    poleR = bok * wysokosc
+    return obwodR, poleR 
 
 # trapez i kolo dla studenta 3
 def trapez(bok_a, bok_b, bok_c, bok_d, wysokosc_a):
-    # TODO
-    return 0, 0
+    pole = (bok_a+bok_b)*wysokosc_a/2
+    obwod = bok_b+bok_b+bok_c+bok_d
+    return pole, obwod
 
 
-def kolo(promien):
-    # TODO
-    return 0, 0
+def kolo(promien, pi):
+    pole = pi*promien^2
+    obwod = 2*pi*promien
+    return pole,obwod
 
 
 assert trojkat(10, 15, 16, 8) == (41, 40)
@@ -43,4 +47,5 @@ assert rownoleglobok(6, 5, 2) == (22, 12)
 assert romb(10, 5) == (40, 50)
 assert trapez(10, 15, 7, 14, 2) == (45, 25)
 # TODO na koniec! dopisz 2 testy dla kola i dla kazdej innej figury po jednym dodatkowym tescie
+assert rownoleglobok(5, 5, 5) 
 
