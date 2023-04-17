@@ -49,4 +49,5 @@ assert trapez(10, 15, 7, 14, 2) == (46, 25)
 # TODO na koniec! dopisz 2 testy dla kola i dla kazdej innej figury po jednym dodatkowym tescie
 assert rownoleglobok(5, 5, 5) == (20, 25)
 assert romb(12, 8) == (48, 96)
-
+assert kwadrat(10) == (40, 100)
+assert prostokat(10, 20) == (60, 200)
