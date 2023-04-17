@@ -2,7 +2,7 @@ def trojkat(bok_a, bok_b, bok_c, wysokosc_a):
     obwod = bok_a + bok_b + bok_c
     pole = (bok_a * wysokosc_a) / 2
     return obwod, pole
-
+    
 
 # kwadrat, prostokat dla studenta 1
 def kwadrat(bok):
