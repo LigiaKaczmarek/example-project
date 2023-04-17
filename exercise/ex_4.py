@@ -6,16 +6,12 @@ def trojkat(bok_a, bok_b, bok_c, wysokosc_a):
 
 # kwadrat, prostokat dla studenta 1
 def kwadrat(bok):
-    # TODO
-    return 0, 0
     pole = (bok ^ 2)
     obwod = (bok * 4)
     return obwod, pole
 
 
 def prostokat(bok_a, bok_b):
-    # TODO
-    return 0, 0
     pole = (bok_a * bok_b)
     obwod = (2 * bok_a + 2 * bok_b)
     return obwod, pole
