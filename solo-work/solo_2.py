@@ -61,6 +61,7 @@ student_ligia.dodaj_oceny(4.5)
 student_ligia.dodaj_oceny(5)
 print(int(student_ligia))
 print(student_ligia.oceny)
+print("--------------")
 
 
 class Ubrania:
@@ -82,9 +83,12 @@ class Ubrania:
         self.cena.append(cena)
 
     def zwroc_średnia_cena(self):
-        return sum(self.cena) /len(self.ocena)
+        return sum(self.cena) /len(self.cena)
 
-    ubrania_ligia = Ubrania("sukienka", "Zara", "36", "biały", "bawełna", "slim")
+ubrania_ligia = Ubrania("sukienka", "Zara", "36", "biały", "bawełna", "slim", "koronka", "18lat")
+ubrania_ligia.dodaj_cena(100)
+print(ubrania_ligia)
+print(ubrania_ligia.cena)
     
 
 
