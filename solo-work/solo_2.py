@@ -64,7 +64,7 @@ print(student_ligia.oceny)
 print("--------------")
 
 
-class Ubrania:
+class Ubranie:
     def __init__(self, rodzaj, marka, rozmiar, kolor, material, dopasowanie, dodatki, dopasowanie_do_wieku):
         self.rodzaj = rodzaj    
         self.marka = marka
@@ -85,10 +85,10 @@ class Ubrania:
     def zwroc_średnia_cena(self):
         return sum(self.cena) /len(self.cena)
 
-ubrania_ligia = Ubrania("sukienka", "Zara", "36", "biały", "bawełna", "slim", "koronka", "18lat")
-ubrania_ligia.dodaj_cena(100)
-print(ubrania_ligia)
-print(ubrania_ligia.cena)
+ubranie_ligia = Ubranie("sukienka", "Zara", "36", "biały", "bawełna", "slim", "koronka", "18lat")
+ubranie_ligia.dodaj_cena(100)
+print(ubranie_ligia)
+print(ubranie_ligia.cena)
     
 
 
