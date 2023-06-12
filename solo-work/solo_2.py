@@ -104,7 +104,6 @@ print(ubranie_nike)
 print("Średnia cena dla ubrania Ligia:", ubranie_Zara.zwroc_srednia_cena())
 print("Średnia cena dla ubrania Nike:", ubranie_nike.zwroc_srednia_cena())
 
-print("-----------------------")
 
 
 
