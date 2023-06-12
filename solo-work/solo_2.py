@@ -64,9 +64,9 @@ print(student_ligia.oceny)
 print("--------------")
 
 
-class Ubrania:
+class Ubranie:
     def __init__(self, rodzaj, marka, rozmiar, kolor, material, dopasowanie, dodatki, dopasowanie_do_wieku):
-        self.rodzaj = rodzaj    
+        self.rodzaj = rodzaj
         self.marka = marka
         self.rozmiar = rozmiar
         self.kolor = kolor
@@ -74,22 +74,38 @@ class Ubrania:
         self.dopasowanie = dopasowanie
         self.dodatki = dodatki
         self.dopasowanie_do_wieku = dopasowanie_do_wieku
-        self.cena = []
+        self.ceny = []
 
     def __str__(self):
-        return f"{self.rodzaj} {self.marka} {self.rozmiar} {self.kolor} {self.material} {self.dopasowanie} {self.dodatki} {self.dopasowanie_do_wieku}"
+        return f"{self.rodzaj} {self.marka} {self.rozmiar} {self.kolor} {self.material} {self.dopasowanie} {self.dodatki} {self.dopasowanie_do_wieku} {self.ceny}"
 
-    def dodaj_cena(self, cena):
-        self.cena.append(cena)
+    def dodaj_cene(self, cena):
+        self.ceny.append(cena)
 
-    def zwroc_średnia_cena(self):
-        return sum(self.cena) /len(self.cena)
+    def zwroc_srednia_cena(self):
+        if len(self.ceny) > 0:
+            return sum(self.ceny) / len(self.ceny)
+        else:
+            return 0.0
 
-ubrania_ligia = Ubrania("sukienka", "Zara", "36", "biały", "bawełna", "slim", "koronka", "18lat")
-ubrania_ligia.dodaj_cena(100)
-print(ubrania_ligia)
-print(ubrania_ligia.cena)
-    
+
+ubranie_Zara = Ubranie("sukienka", "Zara", "36", "biały", "bawełna", "slim", "koronka", "18lat")
+ubranie_Zara.dodaj_cene(100)
+ubranie_Zara.dodaj_cene(150)
+
+ubranie_nike = Ubranie("spodnie", "Nike", "M", "czarny", "poliester", "luźne", "brak", "dowolny")
+ubranie_nike.dodaj_cene(80)
+ubranie_nike.dodaj_cene(90)
+ubranie_nike.dodaj_cene(100)
+
+print(ubranie_Zara)
+print(ubranie_nike)
+
+print("Średnia cena dla ubrania Ligia:", ubranie_Zara.zwroc_srednia_cena())
+print("Średnia cena dla ubrania Nike:", ubranie_nike.zwroc_srednia_cena())
+print("----------------")
+
+
 
 
     
