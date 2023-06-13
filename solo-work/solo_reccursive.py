@@ -19,6 +19,14 @@ print(suma)
 # lista [1,2,3] n -> 1 + f[2,3] -> 2 +f[3] -> 3 i pusta wiec suma dla listy 6
 print("------------")
 
+
+#1. max wartosci
+#Pseudokod
+#najwieksza_wartosc - argument
+#Lista ma 1 element - return 1 element
+#Lista>1element - reszta listy przypisana do zmiennej reszta
+#rekurencja-wywolanie najwieksza_wartosc z listy reszta
+#If 1>reszta to zwracamy 1 w przeciwnym razie reszta
 def najwieksza_wartosc(lista):
     if len(lista) == 1:
         return lista[0]
@@ -30,8 +38,10 @@ def najwieksza_wartosc(lista):
             return jeden
         else:
             return reszta
-
+#ligia_lista- zawiera dwolne argumenty
+#wylowanie najwieksza_wartosc
+#przypisanie max_element
 ligia_lista = [1,2,3]
 max_element = najwieksza_wartosc(ligia_lista)
-print("Największy element w liście:", najwieksza_wartosc)
+print("Największy element w liście:{ligia_lista} to", max_element)
 
