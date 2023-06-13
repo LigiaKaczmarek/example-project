@@ -7,6 +7,9 @@
 
 
 
+from unittest import result
+
+
 def suma_listy(lista):
     if len(lista) == 0:
         return 0
@@ -65,5 +68,18 @@ sum = suma_listy(ligia_lista)
 print(f"Suma listy wynosi", sum)
 print("------------")
 
+#3. Silnia
+#Silnia(n)
+# Czy n = 0     ?     
+# (yes) y -> 1 bo 0!=1
+# (no)  y -> n * silnia(n-1)
 
-
+def Silnia(n):
+    if n == 0:       
+        return 1
+    else:
+        return n * Silnia(n-1)
+Cyfra = 3
+result = Silnia(Cyfra)
+print(f"Silnia wynosi:", result)
+print("----------")
