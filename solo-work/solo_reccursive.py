@@ -83,3 +83,19 @@ Cyfra = 3
 result = Silnia(Cyfra)
 print(f"Silnia wynosi:", result)
 print("----------")
+
+#4. Ciąg fibonaciego
+#Fibonacci(n)
+# Czy n <=1 ?         
+# (yes) y -> n        
+# (no)  y -> fibonacci(n-1) + fibonacci(n-2)      
+
+def Fibonacci(n):
+    if n <= 1:               
+        return n             
+    else:
+        return Fibonacci(n-1) + Fibonacci(n-2)  
+Cyfra= 4
+result = Fibonacci(Cyfra)
+print(f"Wartosc n-tego elementu ciągu wynosi", result)
+print("------")
