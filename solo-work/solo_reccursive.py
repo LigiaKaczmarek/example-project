@@ -43,5 +43,27 @@ def najwieksza_wartosc(lista):
 #przypisanie max_element
 ligia_lista = [1,2,3]
 max_element = najwieksza_wartosc(ligia_lista)
-print("Największy element w liście:{ligia_lista} to", max_element)
+print("Największy element w liście to", max_element)
+
+#2. Suma Listy
+#Suma_listy
+# is l empty ? 
+#(yes) y -> 0
+#(no) n -> l(0) + suma(reszta)
+#Funkcja suma_listy,przyjmująca listę jako argment
+
+def suma_listy (lista):
+    if len(lista) == 0:    
+        return 0           
+    else:
+        return lista[0] + suma_listy(lista[1:])   
+
+#ligia_lista- zawiera dwolne argumenty
+#wywołanie sumy listy
+ligia_lista = [1,2,3]
+sum = suma_listy(ligia_lista)
+print(f"Suma listy wynosi", sum)
+print("------------")
+
+
 
