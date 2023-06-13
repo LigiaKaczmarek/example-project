@@ -99,3 +99,61 @@ Cyfra= 4
 result = Fibonacci(Cyfra)
 print(f"Wartosc n-tego elementu ciągu wynosi", result)
 print("------")
+
+
+#5. SUDOKU 4x4
+
+#1. board = 4X4
+#2. F-cja empty_cell = Wyszukiwanie pustego pola -empty_cell
+#3. F-cja Rekursja = Brak pustych pól = rozwiazanie
+#4. Jeżeli wstawienie cyfry jest poprawne, przypisz ją do pola
+#5. Rekurencyjne rozwiązanie sudoku
+#6. Jeżeli rekurencja zakończyła się niepowodzeniem, cofnięto wstawioną cyfrę
+#7. Sprawdzenie czy plansza jest poprawnego rozmiaru
+
+
+def solve_sudoku(board):
+    size = len(board)
+
+    def empty_cell():
+        for row in range(size):
+            for col in range(size):
+                if board[row][col] == 0:
+                    return row, col
+        return None, None
+
+    def Rekursja():
+        row, col = empty_cell()
+        if row is None:
+            return True
+
+        for num in range(1, size + 1):
+            if solve_sudoku(board, row, col, num):
+                board[row][col] = num
+                if Rekursja():
+                    return True
+                board[row][col] = 0
+        return False
+
+    if size < 4 or size % 2 != 0:
+        print("Niepoprawny rozmiar planszy!")
+        return
+
+    if Rekursja():
+        print("Rozwiązane Sudoku:")
+        for row in board:
+            print(row)
+    else:
+        print("Błąd = Nie można rozwiązać Sudoku dla danej planszy.")
+
+
+# Przykładowa-dowolna plansza Sudoku 4x4
+sudoku_board = [
+    [0, 2, 0, 0],
+    [0, 2, 0, 0],
+    [0, 2, 0, 0],
+    [0, 2, 0, 0]
+]
+
+solve_sudoku(sudoku_board)
+
